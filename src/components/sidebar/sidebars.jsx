@@ -11,10 +11,8 @@ const Sidebars = () => {
           <img src={LogoAtmajaya} alt="" className="w-[230px] m-auto p-1"/>
         </div>
       {MENU.map((items, index) => (
-        <button>
 
           <SidebarItem key={index} items={items} />
-        </button>
       ))}
     </div>
   );

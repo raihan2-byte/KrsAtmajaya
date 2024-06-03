@@ -16,19 +16,19 @@ const Menu = [
     childrens: [
       {
         title: "Academic Planning",
-        path: "/sidebars",
+        path: "/",
         childrens: [
           {
             title: "Class Search",
-            path: "/Mens",
+            path: "/",
           },
           {
             title: "My Course History",
-            path: "/Mens",
+            path: "/",
           },
           {
             title: "My Weekly History",
-            path: "/Mens",
+            path: "/",
           },
           {
             title: "Enrollment: Add/Drop Classes",
@@ -36,25 +36,25 @@ const Menu = [
           },
           {
             title: "Enrollment: Shoping Cart",
-            path: "/Mens",
+            path: "/",
           },
         ],
       },
       {
         title: "Academic Records",
-        path: "/Womens",
+        path: "/",
         childrens : [
           {
             title: "My Course History",
-            path: "/Mens",
+            path: "/",
           },
           {
             title: "My Advisors",
-            path: "/Mens",
+            path: "/",
           },
           {
             title: "My Attendance Roaster",
-            path: "/Mens",
+            path: "/",
           },
           
         ]
@@ -68,19 +68,19 @@ const Menu = [
     childrens: [
       {
         title: "Campus Finances",
-        path: "/Furniture",
+        path: "/",
         childrens:[
           {
             title: "Account Inquiry",
-            path:"/sidebars"
+            path:"/"
           },
           {
             title: "Enroll in Payment Plan",
-            path:"/sidebars"
+            path:"/"
           },
           {
             title: "Virtual Bank Account Details",
-            path:"/sidebars"
+            path:"/"
           },
         ]
       },
@@ -95,23 +95,23 @@ const Menu = [
         childrens:[
           {
             title:"My Academic Requirements",
-            path:"/sidebars",
+            path:"/",
           },
           {
             title:"View Transfer Credit Report",
-            path:"/sidebars",
+            path:"/",
           },
           {
             title:"Research Activities",
-            path:"/sidebars",
+            path:"/",
           },
           {
             title:"Student Grade Detail",
-            path:"/sidebars",
+            path:"/",
           },
           {
             title:"Graduation Registration",
-            path:"/sidebars",
+            path:"/",
           },
         ]
       }
@@ -120,7 +120,7 @@ const Menu = [
   {
     title: "REPORTING TOOLS",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "PEPLE TOOLS",
@@ -130,7 +130,7 @@ const Menu = [
   {
     title: "CEK JADWAL SIDANG",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "ACADEMIC EVALUATION",
@@ -140,7 +140,7 @@ const Menu = [
   {
     title: "MY EXAM TIMETABLE",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "STUDENT CENTER",
@@ -150,7 +150,7 @@ const Menu = [
   {
     title: "KUESIONER MAHASISWA BARU",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "SKP RECAP - STUDENT",
@@ -160,7 +160,7 @@ const Menu = [
   {
     title: "UPLOAD SKP - STUDENT",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "UPLOAD DOCUMENT MAHASISWA",
@@ -170,7 +170,7 @@ const Menu = [
   {
     title: "SERVICE REQUEST",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "STUDENT STATUS",
@@ -180,7 +180,7 @@ const Menu = [
   {
     title: "KUESIONER KEPUASAN MAHASISWA",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
   {
     title: "KUESIONER PEMETAAN MHS BARU",
@@ -190,7 +190,7 @@ const Menu = [
   {
     title: "REQUEST LETTERS",
     icon: "🐞",
-    path: "/report-bug",
+    path: "/",
   },
  
 ];
