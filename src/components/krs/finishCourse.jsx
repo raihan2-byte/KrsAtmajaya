@@ -46,6 +46,7 @@ const CourseSem1 = [
   },
 ];
 
+
 const finishCourse = () => {
   const [SelectedCourse, setSelectedCourse] = useState(false);
 
@@ -70,7 +71,7 @@ const finishCourse = () => {
 
         <ul
           className={`dropdown-menu  ${
-            SelectedCourse ? "block" : "hidden"
+            SelectedCourse ? "hidden" : "block"
           } bg-white text-black-700 `}
         >
           <li className="flex justify-between items-center w-full"></li>

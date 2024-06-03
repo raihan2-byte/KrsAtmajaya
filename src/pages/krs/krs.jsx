@@ -7,7 +7,7 @@ import Krs from "../../components/krs/krs";
 
 const krs = () => {
   return (
-    <div className="h-full flex">
+    <div className="h-full flex mb-2">
       <Sidebar />
       <div className="w-full">
         <Header />

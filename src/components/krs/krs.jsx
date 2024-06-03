@@ -11,7 +11,8 @@ const CourseSem1 = [
     Description: "MATEMATIKA DASAR",
     Units: "2",
     When: "ODD",
-    Day: "Mon 10.00-12.00 WIB",
+    Day : "Monday",
+    Date: "Mon 10.00-12.00 WIB",
     Room: "Dormitory 1 BSD",
     Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     Grade: "",
@@ -21,7 +22,8 @@ const CourseSem1 = [
     Description: "Bahasa Indonesia",
     Units: "2",
     When: "ODD",
-    Day: "Tues 10.00-12.00 WIB",
+    Day : "Tuesday",
+    Date: "Tues 10.00-12.00 WIB",
     Room: "AG 101 BSD",
     Instructor: "Andre Sugioko, S.T.,M.T.",
     Grade: "",
@@ -31,7 +33,8 @@ const CourseSem1 = [
     Description: "Bahasa Inggris",
     Units: "2",
     When: "ODD",
-    Day: "Wed 10.00-12.00 WIB",
+    Day : "Wednesday",
+    Date: "Wed 10.00-12.00 WIB",
     Room: "A 1102 BSD",
     Instructor: "Hotma Antoni Hutahaean, S.T., M.T., IPM",
     Grade: "",
@@ -41,7 +44,8 @@ const CourseSem1 = [
     Description: "Kimia Dasar",
     Units: "2",
     When: "ODD",
-    Day: "Fri 10.00-12.00 WIB",
+    Day : "Friday",
+    Date: "Fri 10.00-12.00 WIB",
     Room: "Dormitory 3 SMG",
     Instructor: "Ronald Sukwadi, Ph.D., IPM",
     Grade: "",
@@ -54,7 +58,8 @@ const CourseSem2 = [
     Description: "Kalkulus I",
     Units: "2",
     When: "EVEN",
-    Day: "Mon 10.00-12.00 WIB",
+    Day : "Monday",
+    Date: "Mon 10.00-12.00 WIB",
     Room: "Dormitory 1 BSD",
     Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     Grade: "",
@@ -64,7 +69,8 @@ const CourseSem2 = [
     Description: "Kalkulus II",
     Units: "2",
     When: "EVEN",
-    Day: "Tues 10.00-12.00 WIB",
+    Day : "Tuesday",
+    Date: "Tues 10.00-12.00 WIB",
     Room: "AG 101 BSD",
     Instructor: "Andre Sugioko, S.T.,M.T.",
     Grade: "",
@@ -74,7 +80,8 @@ const CourseSem2 = [
     Description: "Praktikum CAD",
     Units: "2",
     When: "EVEN",
-    Day: "Wed 10.00-12.00 WIB",
+    Day : "Wednesday",
+    Date: "Wed 10.00-12.00 WIB",
     Room: "A 1102 BSD",
     Instructor: "Hotma Antoni Hutahaean, S.T., M.T., IPM",
     Grade: "",
@@ -84,7 +91,8 @@ const CourseSem2 = [
     Description: "Praktikum Fisika",
     Units: "2",
     When: "EVEN",
-    Day: "Fri 10.00-12.00 WIB",
+    Day : "Friday",
+    Date: "Fri 10.00-12.00 WIB",
     Room: "Dormitory 3 SMG",
     Instructor: "Ronald Sukwadi, Ph.D., IPM",
     Grade: "",
@@ -97,7 +105,8 @@ const CourseSem3 = [
     Description: "Aljabar Linier",
     Units: "2",
     When: "ODD",
-    Day: "Mon 10.00-12.00 WIB",
+    Day : "Monday",
+    Date: "Mon 10.00-12.00 WIB",
     Room: "Dormitory 1 BSD",
     Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     Grade: "",
@@ -107,7 +116,8 @@ const CourseSem3 = [
     Description: "Kewirausahaan",
     Units: "2",
     When: "ODD",
-    Day: "Tues 10.00-12.00 WIB",
+    Day : "Tuesday",
+    Date: "Tues 10.00-12.00 WIB",
     Room: "AG 101 BSD",
     Instructor: "Andre Sugioko, S.T.,M.T.",
     Grade: "",
@@ -117,7 +127,8 @@ const CourseSem3 = [
     Description: "Kewarganegaraan",
     Units: "2",
     When: "ODD",
-    Day: "Wed 10.00-12.00 WIB",
+    Day : "Wednesday",
+    Date: "Wed 10.00-12.00 WIB",
     Room: "A 1102 BSD",
     Instructor: "Hotma Antoni Hutahaean, S.T., M.T., IPM",
     Grade: "",
@@ -127,7 +138,8 @@ const CourseSem3 = [
     Description: "Agama",
     Units: "2",
     When: "ODD",
-    Day: "Fri 10.00-12.00 WIB",
+    Day : "Friday",
+    Date: "Fri 10.00-12.00 WIB",
     Room: "Dormitory 3 SMG",
     Instructor: "Ronald Sukwadi, Ph.D., IPM",
     Grade: "",
@@ -140,7 +152,8 @@ const CourseSem4 = [
     Description: "Kerja Praktik/KKN",
     Units: "2",
     When: "EVEN",
-    Day: "Mon 10.00-12.00 WIB",
+    Day : "Monday",
+    Date: "Mon 10.00-12.00 WIB",
     Room: "Dormitory 1 BSD",
     Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     Grade: "",
@@ -150,7 +163,8 @@ const CourseSem4 = [
     Description: "Seminar",
     Units: "2",
     When: "EVEN",
-    Day: "Tues 10.00-12.00 WIB",
+    Day : "Tuesday",
+    Date: "Tues 10.00-12.00 WIB",
     Room: "AG 101 BSD",
     Instructor: "Andre Sugioko, S.T.,M.T.",
     Grade: "",
@@ -160,7 +174,8 @@ const CourseSem4 = [
     Description: "Proses Manufaktur",
     Units: "2",
     When: "EVEN",
-    Day: "Wed 10.00-12.00 WIB",
+    Day : "Wednesday",
+    Date: "Wed 10.00-12.00 WIB",
     Room: "A 1102 BSD",
     Instructor: "Hotma Antoni Hutahaean, S.T., M.T., IPM",
     Grade: "",
@@ -170,7 +185,8 @@ const CourseSem4 = [
     Description: "Tugas Akhir",
     Units: "2",
     When: "EVEN",
-    Day: "Fri 10.00-12.00 WIB",
+    Day : "Friday",
+    Date: "Fri 10.00-12.00 WIB",
     Room: "Dormitory 3 SMG",
     Instructor: "Ronald Sukwadi, Ph.D., IPM",
     Grade: "",
@@ -180,6 +196,8 @@ const CourseSem4 = [
 
 const krs = () => {
   const [OpenAllCourses, setOpenAllCourses] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState([])
+
 
   return (
     <div className="w-full">
@@ -200,7 +218,7 @@ const krs = () => {
           </div>
           <div className="px-2">Not Satisfied</div>
         </div>
-        <ul className={`dropdown-menu ${OpenAllCourses ? "block" : "hidden"} bg-white text-black-700`}>
+        <ul className={`dropdown-menu ${OpenAllCourses ? "hidden" : "block"} bg-white text-black-700`}>
           <li className="flex justify-between items-center w-full">
             <div className="flex items-center px-10 py-2 justify-between w-full">
               <div className="flex items-center">
@@ -228,16 +246,16 @@ const krs = () => {
             </div>
           </li>
           <li className="justify-between items-center w-full">
-            <Course courses={CourseSem1} semester={1} />
+            <Course courses={CourseSem1} semester={1} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse}/>
           </li>
           <li className="justify-between items-center w-full">
-            <Course courses={CourseSem2} semester={2} />
+            <Course courses={CourseSem2} semester={2} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse}/>
           </li>
           <li className="justify-between items-center w-full">
-            <Course courses={CourseSem3} semester={3} />
+            <Course courses={CourseSem3} semester={3} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse}/>
           </li>
           <li className="justify-between items-center w-full">
-            <Course courses={CourseSem4} semester={4} />
+            <Course courses={CourseSem4} semester={4} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse}/>
           </li>
         </ul>
       </div>
@@ -247,7 +265,15 @@ const krs = () => {
             <div className=""><IoIosAdd className=" text-black"/>
             </div>
           </button>
+          <a href="/krs-result"
+          onClick={()=>
+            {
+              const convertedData = JSON.stringify(selectedCourse)
+              localStorage.setItem("selectedCourse1", convertedData)
+            }
+          }>
             <div className="bg-[#F8BD26] p-[5px] font-bold  text-[12px] border-[1px] border-black">ADD COURSE</div>
+            </a>
         </div>
         <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black">
           <div>Next</div>

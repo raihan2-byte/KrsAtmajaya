@@ -1,41 +1,49 @@
 import React from "react";
 import FolderCokelat from "../assets/folder-cokelat.png";
+import FolderKuning from "../assets/folder-kuning.png";
+import File from "../assets/file.png";
+
 
 const Menu = [
   {
     title: "FAVORITES",
-    icon: "",
+    icon: FolderCokelat,
   },
   {
     title: "HOME",
-    icon: "",
+    icon: FolderCokelat,
   },
   {
     title: "SELF SERVICE",
-    icon: "",
+    icon: FolderCokelat,
     childrens: [
       {
         title: "Academic Planning",
-        path: "/",
+        icon : FolderKuning,
         childrens: [
           {
             title: "Class Search",
+            icon : File,
             path: "/",
           },
           {
             title: "My Course History",
+            icon : File,
             path: "/",
           },
           {
             title: "My Weekly History",
+            icon : File,
             path: "/",
           },
           {
             title: "Enrollment: Add/Drop Classes",
-            path: "/",
+            icon : File,
+            path: "/krs",
           },
           {
             title: "Enrollment: Shoping Cart",
+            icon : File,
             path: "/",
           },
         ],
@@ -43,17 +51,21 @@ const Menu = [
       {
         title: "Academic Records",
         path: "/",
+        icon : FolderKuning,
         childrens : [
           {
             title: "My Course History",
+            icon : File,
             path: "/",
           },
           {
             title: "My Advisors",
+            icon : File,
             path: "/",
           },
           {
             title: "My Attendance Roaster",
+            icon : File,
             path: "/",
           },
           
@@ -64,22 +76,26 @@ const Menu = [
   },
   {
     title: "STUDENT FINANCIALS",
-    icon: "",
+    icon: FolderCokelat,
     childrens: [
       {
         title: "Campus Finances",
+        icon : FolderKuning,
         path: "/",
         childrens:[
           {
             title: "Account Inquiry",
+            icon : File,
             path:"/"
           },
           {
             title: "Enroll in Payment Plan",
+            icon : File,
             path:"/"
           },
           {
             title: "Virtual Bank Account Details",
+            icon : File,
             path:"/"
           },
         ]
@@ -88,29 +104,35 @@ const Menu = [
   },
   {
     title: "CAMPUS COMUNITY",
-    icon: "",
+    icon: FolderCokelat,
     childrens: [
       {
         title: "Degree/Progress Graduation",
+        icon : FolderKuning,
         childrens:[
           {
             title:"My Academic Requirements",
+            icon : File,
             path:"/",
           },
           {
             title:"View Transfer Credit Report",
+            icon : File,
             path:"/",
           },
           {
             title:"Research Activities",
+            icon : File,
             path:"/",
           },
           {
             title:"Student Grade Detail",
+            icon : File,
             path:"/",
           },
           {
             title:"Graduation Registration",
+            icon : File,
             path:"/",
           },
         ]
@@ -119,77 +141,77 @@ const Menu = [
   },
   {
     title: "REPORTING TOOLS",
-    icon: "",
+    icon: FolderCokelat,
     path: "/",
   },
   {
     title: "PEPLE TOOLS",
-    icon: "",
+    icon: FolderCokelat,
   
   },
   {
     title: "CEK JADWAL SIDANG",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "ACADEMIC EVALUATION",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "MY EXAM TIMETABLE",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "STUDENT CENTER",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "KUESIONER MAHASISWA BARU",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "SKP RECAP - STUDENT",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "UPLOAD SKP - STUDENT",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "UPLOAD DOCUMENT MAHASISWA",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "SERVICE REQUEST",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "STUDENT STATUS",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "KUESIONER KEPUASAN MAHASISWA",
-    icon: "",
+    icon : File,
     path: "/",
   },
   {
     title: "KUESIONER PEMETAAN MHS BARU",
-    icon: "",
+    icon : File,
     
   },
   {
     title: "REQUEST LETTERS",
-    icon: "",
+    icon : File,
     path: "/",
   },
  

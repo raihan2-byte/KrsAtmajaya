@@ -1,35 +1,26 @@
 import React, { useState } from "react";
-import Expand from "../../assets/expand.png"
+import { Link } from "react-router-dom";
+import Expand from "../../assets/expand.png";
 
 const SidebarItem = ({ items }) => {
   const [open, setOpen] = useState(false);
-  console.log("items", items);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
 
   if (items.childrens) {
     return (
-      
       <div className="w-full hover:bg-[#e3c187cc] hover:text-[#000] px-2 py-2">
-        
-        <div
-          onClick={() => setOpen(!open)}
-          className="flex gap-3 items-center px-2"
-        >
-          <span>
-            <span className="">{items.icon}</span> {items.title}
+        <div onClick={handleToggle} className="flex gap-3 items-center px-2 cursor-pointer">
+          <span className="flex gap-2 items-center">
+            <img src={items.icon} alt={items.title} /> {items.title}
           </span>
-          <span
-            className={
-              open
-                ? ""
-                : "cursor-pointer transition-all"
-            }
-          >
-            <img src={Expand} alt="" />
+          <span className={open ? " transition-all" : "transition-all"}>
+            <img src={Expand} alt="expand icon" />
           </span>
         </div>
-        <div
-          className={open ? "h-auto overflow-hidden pl-2" : "h-0 overflow-hidden"}
-        >
+        <div className={open ? "h-0 overflow-hidden" : " h-auto overflow-hidden pl-2"}>
           {items.childrens.map((child, index) => (
             <SidebarItem key={index} items={child} />
           ))}
@@ -39,11 +30,11 @@ const SidebarItem = ({ items }) => {
   } else {
     return (
       <div className="w-full hover:bg-[#e3c187cc] hover:text-[#000] px-2 py-2">
-        <div className="flex justify-between items-center px-2">
-          <span>
-            <span>{items.icon}</span> {items.title}
+        <Link to={items.path} className="flex justify-between items-center px-2">
+          <span className="flex items-center gap-2">
+            <img src={items.icon} alt={items.title} /> {items.title}
           </span>
-        </div>
+        </Link>
       </div>
     );
   }

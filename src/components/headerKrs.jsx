@@ -1,6 +1,8 @@
 import React from "react";
 import CartImage from "../assets/cart.png";
 
+const GPA = 1.67
+
 const headerKrs = () => {
   return (
     <div className="">
@@ -52,7 +54,7 @@ const headerKrs = () => {
         </div>
         <div className="flex justify-between items-center">
           <div className="text-[#1D518D] font-bold px-4">
-            Current GPA = 3,75
+            Current GPA = {GPA}
           </div>
           <div className="flex gap-5 px-2">
             <div class="flex items-center mb-4">

@@ -8,9 +8,13 @@ import { IoIosAdd } from "react-icons/io";
 const course = () => {
   const [OpenCourse, setOpenCourse] = useState(false);
   const [openCourseDetail, setopenCourseDetail] = useState(false);
+  const courses1 = JSON.parse(localStorage.getItem("selectedCourse1"));
+
+  console.log(JSON.parse(localStorage.getItem("selectedCourse")));
+
   const CourseSem1 = [
     {
-      Days: "Mon",
+      Day: "Mon",
       Date: "1 Jan 2024 - 1 Jul 2024",
       Room: "Dormitory 1 BSD",
       Start: "10:00",
@@ -19,6 +23,8 @@ const course = () => {
       Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     },
   ];
+
+  
 
   return (
     <div className="h-full flex">
@@ -52,7 +58,7 @@ const course = () => {
               <li className="flex justify-between items-center w-full">
                 <div className="flex items-center px-4 py-2 justify-between w-full ">
                   <div className="text-[#1D518D] font-bold text-[20px]">
-                    TIN 101 - MATEMATIKA DASAR
+                    {courses1.CourseCode} - {courses1.Description}
                   </div>
                 </div>
               </li>
@@ -73,7 +79,7 @@ const course = () => {
                   </div>
                   <ul
                     className={`dropdown-menu  ${
-                      openCourseDetail ? "block" : "hidden"
+                      openCourseDetail ? "hidden" : "block"
                     } bg-white text-black-700 `}
                   >
                     <li className="flex justify-between items-center w-full">
@@ -93,7 +99,7 @@ const course = () => {
                           <div>
                             <div>Undergraduate</div>
 
-                            <div>2</div>
+                            <div>{courses1.Units}</div>
                             <div>Passing C Normal</div>
                             <div>Lecture Required</div>
                             <div>BSD Campus</div>
@@ -110,14 +116,14 @@ const course = () => {
                             <div>Course Attribute</div>
                           </div>
                           <div className="">
-                            <div>Odd</div>
+                            <div>{courses1.When}</div>
                             <div>Thesis Course</div>
                           </div>
                         </div>
                         <div className="bg-[#D9D9D9] px-8 font-bold">
                           <div>Class Schedule</div>
                         </div>
-                        <table className="border-[#888888] w-[80%] mx-8 my-2">
+                        <table className="border-[#888888] w-[90%] mx-8 my-2">
                           <thead className="border-[1px] border-black bg-[#CCE3FF]">
                             <tr className="text-left font-bold ">
                               <th className="border-[1px] border-[#888888] pl-2">
@@ -145,7 +151,7 @@ const course = () => {
                               <tr className="border-[1px] border-[#888888]">
                                 <td className="border-[1px] border-[#888888] pl-2">
                                   <div className="flex gap-2 items-center">
-                                    <div>{item.Days}</div>
+                                    <div>{courses1.Day}</div>
                                   </div>
                                 </td>
                                 <td className="border-[1px] border-[#888888] pl-2">
@@ -155,13 +161,13 @@ const course = () => {
                                   {item.End}
                                 </td>
                                 <td className="border-[1px] border-[#888888] pl-2">
-                                  {item.Room}
+                                  {courses1.Room}
                                 </td>
                                 <td className="border-[1px] border-[#888888] pl-2">
-                                  {item.Instructor}
+                                  {courses1.Instructor}
                                 </td>
                                 <td className="border-[1px] border-[#888888] pl-2">
-                                  {item.Date}
+                                  {courses1.Date}
                                 </td>
                               </tr>
                             ))}
@@ -182,8 +188,19 @@ const course = () => {
                       <IoIosAdd className=" text-black" />
                     </div>
                   </button>
+                 
                   <div className="bg-[#F8BD26] p-[5px] font-bold  text-[12px] border-[1px] border-black">
+                  <a href="/krs-result"
+          onClick={()=>
+            {
+              const convertedData = JSON.stringify(selectedCourse)
+              localStorage.setItem("selectedCourse1", convertedData)
+            }
+          }>
+                  
                     ADD TO CART
+                   
+                  </a>
                   </div>
                 </div>
                 

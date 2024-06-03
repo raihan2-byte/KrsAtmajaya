@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ExpandKrs from "../../assets/expand-krs.png";
 import Course from "../krs/course";
 import DeletecIcon from "../../assets/deleted-icon.png";
@@ -46,8 +46,23 @@ const CourseSem1 = [
   },
 ];
 
+
+
 const selectedCourse = () => {
   const [SelectedCourse, setSelectedCourse] = useState(false);
+
+  const [MyCourses, setCourses] = useState(null);
+
+  useEffect(() => {
+    const coursesData = localStorage.getItem("selectedCourse1");
+    console.log(JSON.parse(coursesData));
+    console.log(typeof coursesData);
+    if (coursesData?.length > 0) {
+      setCourses(JSON.parse(coursesData));
+    } else {
+      setCourses(null);
+    }
+  }, []);
 
   return (
     <div>
@@ -70,7 +85,7 @@ const selectedCourse = () => {
 
         <ul
           className={`dropdown-menu  ${
-            SelectedCourse ? "block" : "hidden"
+            SelectedCourse ? "hidden" : "block"
           } bg-white text-black-700 `}
         >
           <li className="flex justify-between items-center w-full"></li>
@@ -99,7 +114,7 @@ const selectedCourse = () => {
                 </tr>
               </thead>
               <tbody className="border-[1px] border-[#888888] text-[12px]">
-                {CourseSem1.map((item, index) => (
+                {MyCourses?.map((item, index) => (
                   <tr className="border-[1px] border-[#888888]">
                     <td className="border-[1px] border-[#888888] pl-2">
                       <div className="flex gap-2 items-center">
