@@ -19,7 +19,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/sidebar" element={<Sidebar />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/homes" element={<Home />} />
       <Route path="/krs" element={<Krs />} />
       <Route path="/krs-result" element={<KrsResult />} />
       <Route path="/krs-finish" element={<KrsFinish />} />
