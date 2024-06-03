@@ -9,6 +9,8 @@ import Krs from "./pages/krs/krs";
 import KrsResult from "./pages/krsResult/krsResult";
 import KrsFinish from "./pages/krsFinish/krsFinish";
 import Course from "./pages/course/course";
+import Tes from "./pages/tes/tes";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="/krs-result" element={<KrsResult />} />
           <Route path="/krs-finish" element={<KrsFinish />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/tes" element={<Tes />} />
         </Routes>
       </BrowserRouter>
     </section>

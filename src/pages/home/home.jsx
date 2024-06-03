@@ -7,7 +7,7 @@ import CurrentlyInfo from "../../components/home/currentlyInfo";
 const home = () => {
   return (
     <div className="h-full flex">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className="w-full">
         <Header />
         <div className="flex justify-between items-center p-8 bg-[#FFDAB4]">
