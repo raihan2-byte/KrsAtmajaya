@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/login/login";
 import Sidebar from "./components/sidebar/sidebar";
@@ -11,14 +8,12 @@ import KrsFinish from "./pages/krsFinish/krsFinish";
 import Course from "./pages/course/course";
 import Tes from "./pages/tes/tes";
 
-
 function App() {
   return (
     <section>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          {/* <Route path="sidebar" element={<Sidebar />} /> */}
           <Route path="/homes" element={<Home />} />
           <Route path="/krs" element={<Krs />} />
           <Route path="/krs-result" element={<KrsResult />} />
