@@ -4,15 +4,15 @@ import FolderCokelat from "../assets/folder-cokelat.png";
 const Menu = [
   {
     title: "FAVORITES",
-    icon: "📱",
+    icon: "",
   },
   {
     title: "HOME",
-    icon: "📱",
+    icon: "",
   },
   {
     title: "SELF SERVICE",
-    icon: "👕",
+    icon: "",
     childrens: [
       {
         title: "Academic Planning",
@@ -32,7 +32,7 @@ const Menu = [
           },
           {
             title: "Enrollment: Add/Drop Classes",
-            path: "/krs",
+            path: "/",
           },
           {
             title: "Enrollment: Shoping Cart",
@@ -64,7 +64,7 @@ const Menu = [
   },
   {
     title: "STUDENT FINANCIALS",
-    icon: "🏡",
+    icon: "",
     childrens: [
       {
         title: "Campus Finances",
@@ -88,7 +88,7 @@ const Menu = [
   },
   {
     title: "CAMPUS COMUNITY",
-    icon: "📞",
+    icon: "",
     childrens: [
       {
         title: "Degree/Progress Graduation",
@@ -119,77 +119,77 @@ const Menu = [
   },
   {
     title: "REPORTING TOOLS",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "PEPLE TOOLS",
-    icon: "👨‍🦱",
+    icon: "",
   
   },
   {
     title: "CEK JADWAL SIDANG",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "ACADEMIC EVALUATION",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "MY EXAM TIMETABLE",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "STUDENT CENTER",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "KUESIONER MAHASISWA BARU",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "SKP RECAP - STUDENT",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "UPLOAD SKP - STUDENT",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "UPLOAD DOCUMENT MAHASISWA",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "SERVICE REQUEST",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "STUDENT STATUS",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "KUESIONER KEPUASAN MAHASISWA",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
   {
     title: "KUESIONER PEMETAAN MHS BARU",
-    icon: "👨‍🦱",
+    icon: "",
     
   },
   {
     title: "REQUEST LETTERS",
-    icon: "🐞",
+    icon: "",
     path: "/",
   },
  
