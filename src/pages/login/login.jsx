@@ -36,7 +36,7 @@ const login = () => {
             <div>
               <a href="/home">
               <button className="w-[90px] bg-[#C3D6EC] p-1 font-semibold">
-                Sign in
+                Sign in 
               </button>
               </a>
             </div>
