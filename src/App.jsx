@@ -16,12 +16,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/sidebar" element={<Sidebar />} />
-          <Route path="/homes" element={<Home />} />
-          <Route path="/krs" element={<Krs />} />
-          <Route path="/krs-result" element={<KrsResult />} />
-          <Route path="/krs-finish" element={<KrsFinish />} />
-          <Route path="/course" element={<Course />} />
+          <Route path="sidebar" element={<Sidebar />} />
+          <Route path="homes" element={<Home />} />
+          <Route path="krs" element={<Krs />} />
+          <Route path="krs-result" element={<KrsResult />} />
+          <Route path="krs-finish" element={<KrsFinish />} />
+          <Route path="course" element={<Course />} />
         </Routes>
       </BrowserRouter>
     </section>
