@@ -46,8 +46,6 @@ const CourseSem1 = [
   },
 ];
 
-
-
 const selectedCourse = () => {
   const [SelectedCourse, setSelectedCourse] = useState(false);
 
@@ -118,9 +116,18 @@ const selectedCourse = () => {
                   <tr className="border-[1px] border-[#888888]">
                     <td className="border-[1px] border-[#888888] pl-2">
                       <div className="flex gap-2 items-center">
-                        <div>
-                          <img src={DeletecIcon} alt="" />
-                        </div>
+                        <button
+                          onClick={() => {
+                            const filterData = MyCourses.filter(
+                              (value) => value.CourseCode != item.CourseCode
+                            );
+                            setCourses(filterData);
+                          }}
+                        >
+                          <div>
+                            <img src={DeletecIcon} alt="" />
+                          </div>
+                        </button>
                         <div>
                           <input
                             id="default-checkbox"
@@ -158,16 +165,26 @@ const selectedCourse = () => {
               </tbody>
             </table>
           </div>
-      <div className="flex justify-end w-[87.5%] gap-8 ">
-        <div>
-        <button className=" bg-[#BBD9FB] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold">
-            BACK</button>
-        </div>
-        <div>
-        <button className=" bg-[#FDEDB4] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold">
-            PROCESS</button>
-        </div>
-      </div>
+          <div className="flex justify-end w-[87.5%] gap-8 ">
+            <div>
+              <a href="/krs">
+                <button className=" bg-[#BBD9FB] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold">
+                  BACK
+                </button>
+              </a>
+            </div>
+            <div>
+              <a href="/krs-result"
+              onClick={()=>{
+                localStorage.setItem("selectedCourse1",JSON.stringify(MyCourses))
+              }}
+              >
+                <button className=" bg-[#FDEDB4] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold">
+                  PROCESS
+                </button>
+              </a>
+            </div>
+          </div>
         </ul>
       </div>
     </div>

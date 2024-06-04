@@ -37,7 +37,7 @@ const krsResult = () => {
           </div>
           <ul
             className={`dropdown-menu  ${
-              OpenAllCourses ? "block" : "hidden"
+              OpenAllCourses ? "hidden" : "block"
             } bg-white text-black-700 `}
           >
             <li className="flex justify-between items-center w-full">

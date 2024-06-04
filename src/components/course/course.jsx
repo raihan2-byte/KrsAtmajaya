@@ -8,7 +8,7 @@ import { IoIosAdd } from "react-icons/io";
 const course = () => {
   const [OpenCourse, setOpenCourse] = useState(false);
   const [openCourseDetail, setopenCourseDetail] = useState(false);
-  const courses1 = JSON.parse(localStorage.getItem("selectedCourse1"));
+  const courses1 = JSON.parse(localStorage.getItem("selectedCourse2"));
 
   console.log(JSON.parse(localStorage.getItem("selectedCourse")));
 
@@ -23,8 +23,6 @@ const course = () => {
       Instructor: "Trifenaus Prabu Hidayat, S.T., M.T.",
     },
   ];
-
-  
 
   return (
     <div className="h-full flex">
@@ -179,7 +177,7 @@ const course = () => {
                 </div>
               </li>
               <div className="flex gap-[4px] items-center justify-end mt-2 px-4">
-              <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black w-[111.29px]">
+                <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black w-[111.29px]">
                   <div>Back</div>
                 </button>
                 <div className="flex gap-[0.5px] items-center justify-end">
@@ -188,22 +186,24 @@ const course = () => {
                       <IoIosAdd className=" text-black" />
                     </div>
                   </button>
-                 
+
                   <div className="bg-[#F8BD26] p-[5px] font-bold  text-[12px] border-[1px] border-black">
-                  <a href="/krs-result"
-          onClick={()=>
-            {
-              const convertedData = JSON.stringify(selectedCourse)
-              localStorage.setItem("selectedCourse1", convertedData)
-            }
-          }>
-                  
-                    ADD TO CART
-                   
-                  </a>
+                    <a
+                      href="/krs-result"
+                      onClick={() => {
+                        const selectedCourseLocal = JSON.parse(
+                          localStorage.getItem("selectedCourse1")
+                        );
+
+                        const mergedData = [...selectedCourseLocal, courses1];
+                        const convertedData = JSON.stringify(mergedData);
+                        localStorage.setItem("selectedCourse1", convertedData);
+                      }}
+                    >
+                      ADD TO CART
+                    </a>
                   </div>
                 </div>
-                
               </div>
             </ul>
           </div>
