@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import CartImage from "../assets/cart.png";
 
-const headerKrs = ({ totalUnits }) => {
+const HeaderKrs = ({ totalUnits, updateCartItemCount }) => {
+
   const GPA = 1.67; // Misalnya, Anda menggunakan nilai GPA ini untuk menghitung maxCredits
 
   let maxCredits;
@@ -22,10 +23,13 @@ const headerKrs = ({ totalUnits }) => {
   if (totalUnits > maxCredits) {
     alertMessage = `Anda melebihi batas SKS yang diperbolehkan (${maxCredits} SKS) karena GPA Anda tidak memenuhi syarat.`;
   }
+
+  const [cartItemCount, setCartItemCount] = useState(0); // Jumlah item di keranjang belanja
+
   return (
     <div className="">
       <div className="px-8  flex gap-4 mt-2">
-        {/* Tombol Search, Plan, Enroll, My Academics, My Results */}
+        {/* Tombol lainnya */}
       </div>
       <div>
         <hr className="border-t border-[#D3D3D3] bg-[#D3D3D3] w-full p-2" />
@@ -37,7 +41,10 @@ const headerKrs = ({ totalUnits }) => {
             Maximum Credits based on GPA = 0-1,29=12 SKS | 1,30-1,49=14 SKS |
             1,50-1,99=17 SKS | 2,00-3,00=20 SKS | 3,01-4,00=24 SKS
           </div>
-          <div className="px-2">
+          <div className="px-2 relative">
+            <div className="absolute top-0 left-0 bg-white rounded-full w-5 h-5 flex items-center justify-center text-black font-bold">
+              1
+            </div>
             <img src={CartImage} alt="" />
           </div>
         </div>
@@ -48,9 +55,7 @@ const headerKrs = ({ totalUnits }) => {
           <div className="text-[#1D518D] font-bold px-4">
             Current GPA = {GPA}
           </div>
-          <div className="flex gap-5 px-2">
-            {/* Radio buttons */}
-          </div>
+          <div className="flex gap-5 px-2">{/* Radio buttons */}</div>
         </div>
         <div className="px-0">
           <hr className="border-t border-[#888888] bg-[#888888] w-full " />
@@ -61,4 +66,4 @@ const headerKrs = ({ totalUnits }) => {
   );
 };
 
-export default headerKrs;
+export default HeaderKrs;

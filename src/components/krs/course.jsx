@@ -99,7 +99,13 @@ const Course = ({ courses, semester, selectedCourse, setSelectedCourse }) => {
                             id="default-checkbox"
                             type="checkbox"
                             value={item.CourseCode}
-                            checked={selectedCourse?.find((value)=>value.CourseCode==item.CourseCode) ? true : false}
+                            checked={
+                              selectedCourse?.find(
+                                (value) => value.CourseCode == item.CourseCode
+                              )
+                                ? true
+                                : false
+                            }
                             onChange={handleChange}
                             className="w-4 h-4 flex items-center text-blue-600 bg-gray-100 border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600"
                           />

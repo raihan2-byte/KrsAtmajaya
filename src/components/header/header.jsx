@@ -45,7 +45,9 @@ const header = () => {
         </div>
         <div className="flex mx-10">
           <img src={IconProfile} alt="" />
-          <img src={IconLogout} alt="" className="w-[50px] h-[46px] mt-auto" />
+          <a href="/" className="mt-auto">
+          <img src={IconLogout} alt="" className="w-[80px] h-[50px] mt-auto" />
+          </a>
         </div>
       </div>
     </div>

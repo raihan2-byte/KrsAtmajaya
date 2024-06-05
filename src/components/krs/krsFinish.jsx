@@ -93,7 +93,22 @@ const FinishCourses = ({ myCourses, totalUnits }) => {
                 </tr>
         </tbody>
       </table>
-      
+      <div className="flex justify-end w-[90%] gap-8 items-center mt-3">
+            <div>
+              <a href="/krs-result">
+              <button className=" bg-[#BBD9FB] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold">
+                BACK
+              </button>
+              </a>
+            </div>
+            <div>
+              <a href="/">
+              <button className="bg-[#FDEDB4] flex items-center text-center justify-center   w-[98px] h-[21px] border-[1px] border-black font-bold text-[9px]">
+              FINISH ENROLLMENT
+              </button>
+              </a>
+            </div>
+          </div>
     </div>
   );
 };

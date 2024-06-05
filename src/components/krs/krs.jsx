@@ -3,7 +3,6 @@ import Course from "./course";
 import ExpandCourses from "../../assets/expand-krs.png";
 import { IoIosAdd } from "react-icons/io";
 
-import AddIcon from "../../assets/add.png"
 
 const CourseSem1 = [
   {
@@ -282,10 +281,10 @@ const krs = () => {
               localStorage.setItem("selectedCourse1", convertedData)
             }
           }>
-        <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black">
+        {/* <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black">
           <div>Next</div>
           
-        </button>
+        </button> */}
         </a>
       </div>
     </div>
