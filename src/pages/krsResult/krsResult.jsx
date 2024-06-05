@@ -7,8 +7,6 @@ import DeletedIcon from "../../assets/deleted-icon.png";
 import SelectedCourse from "../../components/krs/selectedCourse"
 // import SelectedCourse from "../../components/krs/course"
 
-
-
 const krsResult = () => {
   const [OpenAllCourses, setOpenAllCourses] = useState(false);
   const [totalSelectedUnits, setTotalSelectedUnits] = useState(0);
