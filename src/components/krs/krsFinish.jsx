@@ -31,7 +31,7 @@ const KrsFinish = () => {
       <KrsResult />
         <HeaderKrs />
         <div className="dropdown w-full">
-          <div className="flex py-2 pl-4 bg-[#D9D9D9] justify-between text-[12px] text-[#000000] font-bold">
+          <div className="flex py-2 pl-4 items-center bg-[#D9D9D9] justify-between text-[12px] text-[#000000] font-bold">
             <div className="flex items-center gap-3 ">
               <button
                 className="text-black font-semibold py-1 items-center"
@@ -74,7 +74,7 @@ const FinishCourses = ({ myCourses, totalUnits }) => {
             <th className="border-[1px] border-[#888888] pl-2">Grade</th>
           </tr>
         </thead>
-        <tbody className="border-[1px] border-[#888888] text-[12px]">
+        <tbody className=" text-[12px]">
           {myCourses.map((course) => (
             <tr key={course.CourseCode} className="border-[1px] border-[#888888]">
               <td className="border-[1px] border-[#888888] pl-2">{course.CourseCode}</td>
@@ -87,7 +87,7 @@ const FinishCourses = ({ myCourses, totalUnits }) => {
               <td className="border-[1px] border-[#888888] pl-2">{course.Grade}</td>
             </tr>
           ))}
-           <tr>
+           <tr className="bg-[#BBD9FB] font-bold">
                     <td colSpan={2} className="border-[1px] border-[#888888] pl-2 font-bold">TOTAL SELECTED UNITS</td>
                     <td className="border-[1px] border-[#888888] pl-2 font-bold">{totalUnits}</td>
                 </tr>

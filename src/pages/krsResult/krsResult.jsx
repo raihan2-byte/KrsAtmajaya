@@ -74,10 +74,7 @@ const krsResult = () => {
                   </div>
                 </div>
 
-                <div className="text-[#1D518D] font-bold text-[20px]">
-                Total Selected Units = {totalSelectedUnits}
-
-                </div>
+               
               </div>
               <SelectedCourse onTotalUnitsChange={handleTotalUnitsChange} />
 

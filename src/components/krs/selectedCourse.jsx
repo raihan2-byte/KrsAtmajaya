@@ -92,7 +92,7 @@ const SelectedCourse = ({onTotalUnitsChange }) => {
                   <th className="border-[1px] border-[#888888] pl-2">Grade</th>
                 </tr>
               </thead>
-              <tbody className="border-[1px] border-[#888888] text-[12px]">
+              <tbody className="text-[12px]">
                 {myCourses.map((course) => (
                   <tr key={course.CourseCode} className="border-[1px] border-[#888888]">
                     <td className="border-[1px] border-[#888888] pl-2">
@@ -114,6 +114,10 @@ const SelectedCourse = ({onTotalUnitsChange }) => {
                     <td className="border-[1px] border-[#888888] pl-2">{course.Grade}</td>
                   </tr>
                 ))}
+                <tr className="bg-[#BBD9FB]">
+                    <td colSpan={2} className="border-[1px] border-[#888888] pl-2 font-bold">TOTAL SELECTED UNITS</td>
+                    <td className="border-[1px] border-[#888888] pl-2 font-bold">{totalUnits}</td>
+                </tr>
               </tbody>
             </table>
           </div>

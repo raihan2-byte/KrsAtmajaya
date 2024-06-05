@@ -3,6 +3,7 @@ import Course from "./course";
 import ExpandCourses from "../../assets/expand-krs.png";
 import { IoIosAdd } from "react-icons/io";
 
+import AddIcon from "../../assets/add.png"
 
 const CourseSem1 = [
   {
