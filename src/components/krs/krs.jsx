@@ -9,7 +9,7 @@ const CourseSem1 = [
   {
     CourseCode: "TIN 101",
     Description: "MATEMATIKA DASAR",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Monday",
     Date: "Mon 10.00-12.00 WIB",
@@ -20,7 +20,7 @@ const CourseSem1 = [
   {
     CourseCode: "TIN 102",
     Description: "Bahasa Indonesia",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Tuesday",
     Date: "Tues 10.00-12.00 WIB",
@@ -31,7 +31,7 @@ const CourseSem1 = [
   {
     CourseCode: "TIN 103",
     Description: "Bahasa Inggris",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Wednesday",
     Date: "Wed 10.00-12.00 WIB",
@@ -42,7 +42,7 @@ const CourseSem1 = [
   {
     CourseCode: "TIN 104",
     Description: "Kimia Dasar",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Friday",
     Date: "Fri 10.00-12.00 WIB",
@@ -56,7 +56,7 @@ const CourseSem2 = [
   {
     CourseCode: "TIN 201",
     Description: "Kalkulus I",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Monday",
     Date: "Mon 10.00-12.00 WIB",
@@ -67,7 +67,7 @@ const CourseSem2 = [
   {
     CourseCode: "TIN 202",
     Description: "Kalkulus II",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Tuesday",
     Date: "Tues 10.00-12.00 WIB",
@@ -78,7 +78,7 @@ const CourseSem2 = [
   {
     CourseCode: "TIN 203",
     Description: "Praktikum CAD",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Wednesday",
     Date: "Wed 10.00-12.00 WIB",
@@ -89,7 +89,7 @@ const CourseSem2 = [
   {
     CourseCode: "TIN 204",
     Description: "Praktikum Fisika",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Friday",
     Date: "Fri 10.00-12.00 WIB",
@@ -103,7 +103,7 @@ const CourseSem3 = [
   {
     CourseCode: "TIN 301",
     Description: "Aljabar Linier",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Monday",
     Date: "Mon 10.00-12.00 WIB",
@@ -114,7 +114,7 @@ const CourseSem3 = [
   {
     CourseCode: "TIN 302",
     Description: "Kewirausahaan",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Tuesday",
     Date: "Tues 10.00-12.00 WIB",
@@ -125,7 +125,7 @@ const CourseSem3 = [
   {
     CourseCode: "TIN 303",
     Description: "Kewarganegaraan",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Wednesday",
     Date: "Wed 10.00-12.00 WIB",
@@ -136,7 +136,7 @@ const CourseSem3 = [
   {
     CourseCode: "TIN 304",
     Description: "Agama",
-    Units: "2",
+    Units: 2,
     When: "ODD",
     Day : "Friday",
     Date: "Fri 10.00-12.00 WIB",
@@ -150,7 +150,7 @@ const CourseSem4 = [
   {
     CourseCode: "TIN 401",
     Description: "Kerja Praktik/KKN",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Monday",
     Date: "Mon 10.00-12.00 WIB",
@@ -161,7 +161,7 @@ const CourseSem4 = [
   {
     CourseCode: "TIN 402",
     Description: "Seminar",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Tuesday",
     Date: "Tues 10.00-12.00 WIB",
@@ -172,7 +172,7 @@ const CourseSem4 = [
   {
     CourseCode: "TIN 403",
     Description: "Proses Manufaktur",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Wednesday",
     Date: "Wed 10.00-12.00 WIB",
@@ -183,7 +183,7 @@ const CourseSem4 = [
   {
     CourseCode: "TIN 404",
     Description: "Tugas Akhir",
-    Units: "2",
+    Units: 2,
     When: "EVEN",
     Day : "Friday",
     Date: "Fri 10.00-12.00 WIB",
@@ -240,9 +240,9 @@ const krs = () => {
                   </div>
                 </label>
               </div>
-              <div className="text-[#1D518D] font-bold text-[20px]">
-                Total Selected Units = 24
-              </div>
+              {/* <div className="text-[#1D518D] font-bold text-[20px]">
+                Total Selected Units =2
+              </div> */}
             </div>
           </li>
           <li className="justify-between items-center w-full">
@@ -275,9 +275,18 @@ const krs = () => {
             <div className="bg-[#F8BD26] p-[5px] font-bold  text-[12px] border-[1px] border-black">ADD COURSE</div>
             </a>
         </div>
+        <a href="/krs-result"
+          onClick={()=>
+            {
+              const convertedData = JSON.stringify(selectedCourse)
+              localStorage.setItem("selectedCourse1", convertedData)
+            }
+          }>
         <button className="bg-[#D9D9D9] p-[5px] font-bold text-[12px] border-[1px] border-black">
           <div>Next</div>
+          
         </button>
+        </a>
       </div>
     </div>
   );

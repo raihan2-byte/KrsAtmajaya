@@ -133,12 +133,6 @@ const finishCourse = () => {
                 <tr>
                     <td colSpan={2} className="border-[1px] border-[#888888] pl-2 font-bold">TOTAL SELECTED UNITS</td>
                     <td className="border-[1px] border-[#888888] pl-2">8</td>
-                    {/* <td className="">s</td>
-                    <td className="">s</td>
-                    <td className="">s</td>
-                    <td className="">s</td>
-                    <td className="">s</td> */}
-                    
                 </tr>
               </tbody>
             

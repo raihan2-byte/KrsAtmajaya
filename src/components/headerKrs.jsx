@@ -1,40 +1,33 @@
 import React from "react";
 import CartImage from "../assets/cart.png";
 
-const GPA = 1.67
+const headerKrs = ({ totalUnits }) => {
+  const GPA = 1.67; // Misalnya, Anda menggunakan nilai GPA ini untuk menghitung maxCredits
 
-const headerKrs = () => {
+  let maxCredits;
+  let alertMessage = "";
+
+  if (GPA >= 0 && GPA <= 1.29) {
+    maxCredits = 12;
+  } else if (GPA >= 1.30 && GPA <= 1.49) {
+    maxCredits = 14;
+  } else if (GPA >= 1.50 && GPA <= 1.99) {
+    maxCredits = 17;
+  } else if (GPA >= 2.00 && GPA <= 3.00) {
+    maxCredits = 20;
+  } else if (GPA >= 3.01 && GPA <= 4.00) {
+    maxCredits = 24;
+  }
+
+  if (totalUnits > maxCredits) {
+    alertMessage = `Anda melebihi batas SKS yang diperbolehkan (${maxCredits} SKS) karena GPA Anda tidak memenuhi syarat.`;
+  }
   return (
     <div className="">
       <div className="px-8  flex gap-4 mt-2">
-        <div>
-          <button className="p-2 bg-[#D3D3D3] w-[65px] h-[50px] rounded-t-[10px] text-[10px]">
-            Search
-          </button>
-        </div>
-        <div>
-          <button className="p-2 bg-[#D3D3D3] w-[65px] h-[50px] rounded-t-[10px] text-[10px]">
-            Plan
-          </button>
-        </div>
-        <div>
-          <button className="p-2 bg-[#D3D3D3] w-[65px] h-[50px] rounded-t-[10px] text-[10px]">
-            Enroll
-          </button>
-        </div>
-        <div>
-          <button className="p-2 bg-[#D3D3D3] w-[65px] h-[50px] rounded-t-[10px] text-[10px]">
-            My Academics
-          </button>
-        </div>
-        <div>
-          <button className="p-2 bg-[#D3D3D3] w-[65px] h-[50px] rounded-t-[10px] text-[10px]">
-            My Results
-          </button>
-        </div>
+        {/* Tombol Search, Plan, Enroll, My Academics, My Results */}
       </div>
       <div>
-        {/* <div className='w-full border-t border-[#D3D3D3] bg-[#D3D3D3]'></div> */}
         <hr className="border-t border-[#D3D3D3] bg-[#D3D3D3] w-full p-2" />
       </div>
       <div className="space-y-2 text-[12px]">
@@ -49,7 +42,6 @@ const headerKrs = () => {
           </div>
         </div>
         <div className="px-0">
-          {" "}
           <hr className="border-t border-[#888888] bg-[#888888] w-full " />
         </div>
         <div className="flex justify-between items-center">
@@ -57,57 +49,13 @@ const headerKrs = () => {
             Current GPA = {GPA}
           </div>
           <div className="flex gap-5 px-2">
-            <div class="flex items-center mb-4">
-              <input
-                id="default-radio-1"
-                type="radio"
-                value=""
-                name="default-radio"
-                class="w-4 h-4 text-[#000000] bg-gray-100 border-black  dark:bg-gray-700 dark:border-gray-600"
-              />
-              <label
-                for="default-radio-1"
-                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Pending
-              </label>
-            </div>
-            <div class="flex items-center mb-4">
-              <input
-                id="default-radio-1"
-                type="radio"
-                value=""
-                name="default-radio"
-                class="w-4 h-4 text-[#000000] bg-gray-100 border-black  dark:bg-gray-700 dark:border-gray-600"
-              />
-              <label
-                for="default-radio-1"
-                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                In Progress
-              </label>
-            </div>
-            <div class="flex items-center mb-4">
-              <input
-                id="default-radio-1"
-                type="radio"
-                value=""
-                name="default-radio"
-                class="w-4 h-4 text-[#000000] bg-gray-100 border-black  dark:bg-gray-700 dark:border-gray-600"
-              />
-              <label
-                for="default-radio-1"
-                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Planned
-              </label>
-            </div>
+            {/* Radio buttons */}
           </div>
         </div>
         <div className="px-0">
-          {" "}
           <hr className="border-t border-[#888888] bg-[#888888] w-full " />
         </div>
+        <div className="px-4 text-red-500">{alertMessage}</div>
       </div>
     </div>
   );

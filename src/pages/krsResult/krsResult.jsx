@@ -11,7 +11,11 @@ import SelectedCourse from "../../components/krs/selectedCourse"
 
 const krsResult = () => {
   const [OpenAllCourses, setOpenAllCourses] = useState(false);
+  const [totalSelectedUnits, setTotalSelectedUnits] = useState(0);
 
+  const handleTotalUnitsChange = (total) => {
+    setTotalSelectedUnits(total);
+  };
   return (
     <div className="h-full flex">
       <Sidebar />
@@ -73,10 +77,12 @@ const krsResult = () => {
                 </div>
 
                 <div className="text-[#1D518D] font-bold text-[20px]">
-                  Total Selected Units = 24
+                Total Selected Units = {totalSelectedUnits}
+
                 </div>
               </div>
-              <SelectedCourse/>
+              <SelectedCourse onTotalUnitsChange={handleTotalUnitsChange} />
+
 
               </div>
               
