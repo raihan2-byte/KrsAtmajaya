@@ -45,7 +45,7 @@ const KrsFinish = () => {
             </div>
             <div className="px-2">Not Satisfied</div>
           </div>
-          <ul className={`dropdown-menu ${finishCourse ? "block" : "hidden"} bg-white text-black-700`}>
+          <ul className={`dropdown-menu ${finishCourse ? "hidden" : "block"} bg-white text-black-700`}>
             <li className="flex justify-between items-center w-full">
               <div className="w-full">
                 <FinishCourses myCourses={myCourses} totalUnits={totalUnits} />
