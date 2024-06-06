@@ -31,7 +31,7 @@ const SelectedCourse = ({onTotalUnitsChange }) => {
   };
 
   const handleProcess = () => {
-    const GPA = 1.67; // Anda dapat mengubah nilai GPA sesuai kebutuhan
+    const GPA = 1.1; // Anda dapat mengubah nilai GPA sesuai kebutuhan
     let maxCredits;
 
     if (GPA >= 0 && GPA <= 1.29) {

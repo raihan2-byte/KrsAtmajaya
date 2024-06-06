@@ -3,7 +3,7 @@ import CartImage from "../assets/cart.png";
 
 const HeaderKrs = ({ totalUnits, updateCartItemCount }) => {
 
-  const GPA = 1.67; // Misalnya, Anda menggunakan nilai GPA ini untuk menghitung maxCredits
+  const GPA = 1.1; // Misalnya, Anda menggunakan nilai GPA ini untuk menghitung maxCredits
 
   let maxCredits;
   let alertMessage = "";
